@@ -9,20 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-start">
+            <!-- Left Column - Profile Info -->
             <div class="col-3 border m-4 p-2 d-flex justify-content-center text-center rounded">
                 <div class="row">
                     <div class="col-12 mt-5">
-                        <!-- fix rounded fix size image -->
                         <img src="/photohub/photo_2023-11-07_14-54-28.jpg" class="rounded-4 mx-auto w-50" alt="Portrait">
                     </div>
+                    
                     <div class="col-12 my-3">
-                        <h2> Mykyta Sydko </h2>
+                        <h2>Mykyta Sydko</h2>
                     </div>
+                    
                     <div class="col-12 my-3">
-                        <span class="badge bg-secondary text-light fs-6 px-3 py-2 rounded-3 shadow-sm">Frontend & Backend Developer</span> 
+                        <span class="badge text-warning-emphasis fs-6 px-3 py-2 rounded-3 shadow-sm" style="background-color: #ffc107;">Frontend & Backend Developer</span> 
                     </div>
+                    
                     <div class="col-12">
+                        <hr class="border-2 border-dark w-75 mx-auto">
+                        
                         <!-- Email -->
                         <div class="row d-flex justify-content-center align-items-center text-center p-0 mb-2">
                             <div class="col-3">
@@ -47,7 +52,7 @@
                             <div class="col-3">
                                 <div class="w-100 h-auto border shadow rounded-3 py-1">
                                     <div class="p-2">
-                                        <i class="bi bi-telephone"></i>
+                                        <i class="bi bi-phone"></i>
                                     </div>
                                 </div>
                             </div>
@@ -98,12 +103,57 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <!-- Social Icons -->
+                        <div class="col-12 mt-4 mb-3">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-github"></i>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="col-8 border m-1">
-                2 of 2
+            <!-- Right Column - Main Content -->
+            <div class="col-8">
+                <div class="border m-4 ms-1 p-4 rounded">
+                    <!-- About Me Section -->
+                    <div class="mb-5">
+                        <h2 class="text-start">About Me</h2>
+                        <hr class="border-5 border-warning rounded-pill" style="width: 170px;">
+                        
+                        <p>
+                            Welcome! I'm Mykyta Sydko, a dedicated Frontend & Backend Developer with a passion 
+                            for creating seamless digital experiences. Currently based in Berlin, Germany, 
+                            I specialize in building responsive web applications using modern technologies.
+                        </p>
+                        
+                        <p>
+                            When I'm not coding, you'll find me exploring new programming languages, 
+                            contributing to open-source projects, or experimenting with the latest web development tools.
+                        </p>
+                    </div>
+                    
+                    <!-- What I'm doing Section -->
+                    <div>
+                        <h2 class="text-start">What I'm doing</h2>
+                        <hr class="border-5 border-warning rounded-pill" style="width: 200px;">
+                        
+                        <!-- Web Design Item -->
+                        <div class="row d-flex align-items-center p-3 mb-3 border rounded shadow-sm">
+                            <div class="col-2">
+                                <div class="d-flex justify-content-center align-items-center bg-warning rounded-3 p-3" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-palette fs-3 text-warning-emphasis"></i>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5 class="fw-bold mb-2">Web Design</h5>
+                                <p class="text-muted mb-0">Creating modern and responsive user interfaces with attention to detail and user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
