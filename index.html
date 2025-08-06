@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
@@ -115,21 +117,20 @@
                 </div>
             </div>
             
-            <!-- Right Column - Main Content -->
-            <div class="col-8">
-                <div class="border m-4 ms-1 p-4 rounded">
+            <div class="col-lg-8 col-md-8">
+                <div class="bg-white border m-4 ms-1 p-5 rounded-4 shadow-sm">
                     <!-- About Me Section -->
                     <div class="mb-5">
-                        <h2 class="text-start">About Me</h2>
-                        <hr class="border-5 border-warning rounded-pill" style="width: 170px;">
+                        <h2 class="text-start fw-bold mb-3">About Me</h2>
+                        <div class="bg-warning rounded-pill mb-4" style="width: 170px; height: 4px;"></div>
                         
-                        <p>
+                        <p class="text-muted lh-lg mb-3">
                             Welcome! I'm Mykyta Sydko, a dedicated Frontend & Backend Developer with a passion 
                             for creating seamless digital experiences. Currently based in Berlin, Germany, 
                             I specialize in building responsive web applications using modern technologies.
                         </p>
                         
-                        <p>
+                        <p class="text-muted lh-lg">
                             When I'm not coding, you'll find me exploring new programming languages, 
                             contributing to open-source projects, or experimenting with the latest web development tools.
                         </p>
@@ -137,19 +138,77 @@
                     
                     <!-- What I'm doing Section -->
                     <div>
-                        <h2 class="text-start">What I'm doing</h2>
-                        <hr class="border-5 border-warning rounded-pill" style="width: 200px;">
+                        <h2 class="text-start fw-bold mb-3">What I'm doing</h2>
+                        <div class="bg-warning rounded-pill mb-4" style="width: 200px; height: 4px;"></div>
                         
-                        <!-- Web Design Item -->
-                        <div class="row d-flex align-items-center p-3 mb-3 border rounded shadow-sm">
-                            <div class="col-2">
-                                <div class="d-flex justify-content-center align-items-center bg-warning rounded-3 p-3" style="width: 60px; height: 60px;">
-                                    <i class="bi bi-palette fs-3 text-warning-emphasis"></i>
+                        <!-- Services Grid -->
+                        <div class="row g-4">
+                            <!-- Web Design -->
+                            <div class="col-12 col-lg-6">
+                                <div class="service-card bg-white rounded-4 p-4 h-100">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon-wrapper icon-web-design me-3 flex-shrink-0">
+                                            <i class="bi bi-palette-fill"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold mb-2">Web Design</h5>
+                                            <p class="text-muted mb-0 small">
+                                                Creating modern and responsive user interfaces with attention to detail and user experience.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <h5 class="fw-bold mb-2">Web Design</h5>
-                                <p class="text-muted mb-0">Creating modern and responsive user interfaces with attention to detail and user experience.</p>
+                            
+                            <!-- Web Development -->
+                            <div class="col-12 col-lg-6">
+                                <div class="service-card bg-white rounded-4 p-4 h-100">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon-wrapper icon-web-development me-3 flex-shrink-0">
+                                            <i class="bi bi-code-slash"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold mb-2">Web Development</h5>
+                                            <p class="text-muted mb-0 small">
+                                                High-quality development of websites and web applications at the professional level.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Photography -->
+                            <div class="col-12 col-lg-6">
+                                <div class="service-card bg-white rounded-4 p-4 h-100">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon-wrapper icon-mobile-apps me-3 flex-shrink-0">
+                                            <i class="bi bi-camera"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold mb-2">Photography</h5>
+                                            <p class="text-muted mb-0 small">
+                                                I love taking high-quality photos, both portraits and street shots.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content Creation -->
+                            <div class="col-12 col-lg-6">
+                                <div class="service-card bg-white rounded-4 p-4 h-100">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon-wrapper icon-photography me-3 flex-shrink-0">
+                                            <i class="bi bi-chat-left-text-fill"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold mb-2">Content Creation</h5>
+                                            <p class="text-muted mb-0 small">
+                                                I analyze what is popular and interesting, and I always follow trends.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,6 +218,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 </body>
 </html>
