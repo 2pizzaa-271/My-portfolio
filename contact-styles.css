@@ -1,0 +1,239 @@
+/* resume-styles.css - Стили для страницы Resume */
+
+/* Применяем шрифт Ubuntu ко всему документу */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Основной фон для body */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #333;
+    background: linear-gradient(135deg, #f8f8f8, #dcdcdc, #f4e2d8, #ffd700, #b8860b);
+    background-size: 200% 200%;
+    animation: bgMove 12s ease infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Навигационный бар */
+.top-navbar {
+    position: fixed;
+    top: 15px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.315); 
+    backdrop-filter: blur(15px); 
+    border-radius: 50px 0 0 50px;
+    padding: 10px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-right: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    background: transparent;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    background: #ffc107;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+    border-color: #ffc107;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background: #ffc107;
+    color: #fff !important;
+    font-weight: 700;
+    border-color: #ffc107;
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Логотип/имя в навбаре */
+.nav-brand {
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 15px;
+    padding: 10px 0;
+}
+
+/* Основной контейнер с контентом */
+.main-container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+/* Карточка контента */
+.content-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.content-card h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    background: linear-gradient(90deg, #333, #ffd700, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Секции резюме (если добавите контент) */
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #ffc107;
+    border-radius: 2px;
+}
+
+/* Элементы опыта и образования */
+.experience-item, .education-item {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.experience-item:hover, .education-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.job-title, .degree-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.company-name, .school-name {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.date-range {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+/* Навыки */
+.skill-badge {
+    display: inline-block;
+    background: #ffc107;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+    background: #ffb300;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .top-navbar {
+        top: 10px;
+        right: 0;
+        left: 10px;
+        border-radius: 50px;
+        border: 1px solid rgba(255, 193, 7, 0.3);
+        padding: 8px 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .nav-brand {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .main-container {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+
+    .content-card h1 {
+        font-size: 28px;
+    }
+}

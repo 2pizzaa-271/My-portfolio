@@ -12,25 +12,28 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Верхний навигационный бар -->
+
+        <!-- Дополнительные страницы на сайте -->
+        <!-- Верхний навигационный бар -->
+
     <nav class="top-navbar">
         <div class="d-flex align-items-center">
             <span class="nav-brand">Mykyta Sydko</span>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#about" class="nav-link active">About</a>
+                    <a href="index.html" class="nav-link active">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#resume" class="nav-link">Resume</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    
+
     <div class="container">
         <div class="row d-flex align-items-start">
             <!-- Left Column - Profile Info -->
@@ -243,22 +246,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YPmcdhBPg1ERo0BZlK" crossorigin="anonymous"></script>
 
-    <script>
-        // Плавная прокрутка к разделам и активация кнопок
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
+        <script>
+            // Установка активной страницы при загрузке
+            document.addEventListener('DOMContentLoaded', function() {
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
                 
                 // Убираем активный класс у всех ссылок
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
                 
-                // Добавляем активный класс к текущей ссылке
-                this.classList.add('active');
-                
-                const targetId = this.getAttribute('href').substring(1);
-                console.log('Переход к разделу:', targetId);
+                // Добавляем активный класс к текущей странице
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    }
+                });
             });
-        });
-    </script>
+        </script>
 </body>
 </html>
