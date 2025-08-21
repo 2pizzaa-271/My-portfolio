@@ -47,6 +47,15 @@
 ## 5. Git Workflow (ОБЯЗАТЕЛЬНО :fire:)
 После выполнения всех изменений нужно оформить работу правильно через **Git**.  
 
+Справочник 
+- [git merge](https://git-scm.com/docs/git-merge)
+- [git add](https://git-scm.com/docs/git-add.html#_description)
+- [git commit](https://git-scm.com/docs/git-commit)
+- [git checkout](https://git-scm.com/docs/git-checkout)
+- [git push](https://git-scm.com/docs/git-push.html#_examples)
+- [Как создать mr инфо от gitLab](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
+- [Поэтапрое обучение](https://ru.stackoverflow.com/questions/1249498/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-merge-request-%D0%BD%D0%B0-gitlab-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-git-bash)
+
 Шаги:  
 ```bash
 git add .
