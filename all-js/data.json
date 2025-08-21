@@ -1,0 +1,141 @@
+{
+    "personal": {
+        "name": "Mykyta Sydko",
+        "title": "Frontend & Backend Developer",
+        "description": "A dedicated Frontend & Backend Developer with a passion for creating seamless digital experiences. Currently based in Berlin, Germany, I specialize in building responsive web applications using modern technologies.",
+        "photo": "/photohub/photo_2023-11-07_14-54-28.jpg",
+        "bio": "When I'm not coding, you'll find me exploring new programming languages, contributing to open-source projects, or experimenting with the latest web development tools."
+                },
+
+    "skills": 
+    [
+        {
+        "name": "HTML",
+        "level": "Advanced",
+        "progress": 85,
+        "description": "Semantic HTML structure, accessibility, modern HTML5 features"
+        },
+        {
+        "name": "CSS",
+        "level": "Advanced",
+        "progress": 80,
+        "description": "Modern CSS, flexbox, grid, responsive design, Bootstrap framework"
+        },
+        {
+        "name": "Bootstrap",
+        "level": "Proficient",
+        "progress": 75,
+        "description": "Grid system, components, utilities, responsive design patterns"
+        },
+
+        {
+        "name": "JavaScript",
+        "level": "Intermediate",
+        "progress": 65,
+        "description": "DOM manipulation, ES6+, event handling, modern JavaScript"
+        },
+
+        {
+        "name": "Web Design",
+        "level": "Intermediate",
+        "progress": 70,
+        "description": "UI/UX principles, modern design patterns, responsive layouts"
+        },
+
+        {
+        "name": "Git/GitHub",
+        "level": "Intermediate",
+        "progress": 60,
+        "description": "Version control, repositories, branching, collaborative development"
+        }
+    ],
+
+    "services": 
+    [
+        {
+        "id": 1,
+        "title": "Web Design",
+        "description": "Creating modern and responsive user interfaces with attention to detail and user experience.",
+        "icon": "bi-palette-fill",
+        "category": "design"
+        },
+
+        {
+        "id": 2,
+        "title": "Web Development",
+        "description": "High-quality development of websites and web applications at the professional level.",
+        "icon": "bi-code-slash",
+        "category": "development"
+        },
+
+        {
+        "id": 3,
+        "title": "Photography",
+        "description": "I love taking high-quality photos, both portraits and street shots.",
+        "icon": "bi-camera",
+        "category": "creative"
+        },
+
+        {
+        "id": 4,
+        "title": "Content Creation",
+        "description": "I analyze what is popular and interesting, and I always follow trends.",
+        "icon": "bi-chat-left-text-fill",
+        "category": "content"
+        }
+    ],
+
+    "contacts": 
+    {
+        "email": "sidkonekit97@gmail.com",
+        "phone": "+49 1512 3456789",
+        "birthday": "6 April 2004",
+        "location": "Berlin, Germany",
+        "social": {
+        "instagram": "#",
+        "facebook": "#",
+        "linkedin": "#",
+        "github": "https://github.com/2pizzaa-271"
+        }
+    },
+
+    "navigation": 
+    [
+        {
+        "name": "About",
+        "href": "index.html",
+        "active": true
+        },
+
+        {
+        "name": "Resume",
+        "href": "resume.html",
+        "active": false
+        },
+
+        {
+        "name": "Contact",
+        "href": "contact.html",
+        "active": false
+        }
+    ],
+
+    "projects": 
+    [
+        {
+        "id": 1,
+        "title": "Portfolio Website",
+        "description": "Personal portfolio website with modern design and responsive layout",
+        "image": "images/portfolio.jpg",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
+        "link": "https://github.com/2pizzaa-271/My-portfolio",
+        "demo": "https://2pizzaa-271.github.io/My-portfolio"
+        }
+    ]
+
+}
