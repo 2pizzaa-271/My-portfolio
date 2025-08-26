@@ -10,5 +10,23 @@
         "level": "beginner",
         "experience": "05.03.2025",
         "details": ""
+    },
+    {
+        "name": "JavaScript",
+        "level": "beginner",
+        "experience": "05.03.2025",
+        "details": ""
+    },
+    {
+        "name": "Web Design",
+        "level": "beginner",
+        "experience": "05.03.2025",
+        "details": ""
+    },
+    {
+        "name": "Git/GitHub",
+        "level": "beginner",
+        "experience": "05.03.2025",
+        "details": ""
     }
 ]
